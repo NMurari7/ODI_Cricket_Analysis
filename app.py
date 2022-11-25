@@ -150,8 +150,8 @@ if menu_bar == 'Overall Analysis':
 if menu_bar == 'Head to Head Analysis':
     countries = df['Winner'].unique()
 
-    team1 = st.selectbox("Select Team 1", countries, value="Australia")
-    team2 = st.selectbox("Select Team 2", countries, value="England")
+    team1 = st.selectbox("Select Team 1", countries)
+    team2 = st.selectbox("Select Team 2", countries)
     # team1 = "India"
     # team2 = "Pakistan"
     if team1 != team2:
