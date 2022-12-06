@@ -123,3 +123,9 @@ def plot_ground_bar(Venue_details, venue):
 
 
     return (figg, f, s)
+
+def most_team_wins(analysis_df, venue):
+    venue_teams = analysis_df[analysis_df["Venue"] == venue]
+    fig = plt.figure(figsize=(14, 8))
+    plt.plot(venue_teams.Winner.value_counts()[:3])
+    return fig
