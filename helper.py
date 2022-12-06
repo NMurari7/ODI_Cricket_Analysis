@@ -73,21 +73,24 @@ def head_to_head(df, t1, t2):
 
     print(f"Total no. of matches played between {t1} and {t2} is {tota}")
 
-    fig8 = plt.figure(figsize=(16, 6))
-    plt.bar(t1, t1w)
-    plt.bar(t2, t2w)
+    fig8 = plt.figure(figsize=(6, 4))
+    p = [t1w,t2w]
+    plt.pie([t1w,t2w],   startangle=90, labeldistance=1.05, rotatelabels =True, autopct=lambda p: '{:.0f}'.format(p))
+    plt.legend(title="Wins", labels = ["Team-1_wins", "Team-2_wins"])
+#     plt.bar(t1, t1w)
+#     plt.bar(t2, t2w)
     plt.title(f"{t1} VS {t2}  head-to-head wins")
 
 
-    fig9 = plt.figure(figsize=(16, 6))
-    plt.bar(t1, t1_home_wins)
-    plt.bar(t2, t2_home_wins)
+    fig9 = plt.figure(figsize=(6, 4))
+    plt.bar(t1, t1_home_wins,width=0.2)
+    plt.bar(t2, t2_home_wins,width=0.2)
     plt.title(f"{t1} and {t2} wins at home")
 
 
-    fig10 = plt.figure(figsize=(16, 6))
-    plt.bar(t1, t1_away_wins)
-    plt.bar(t2, t2_away_wins)
+    fig10 = plt.figure(figsize=(6, 4))
+    plt.bar(t1, t1_away_wins,width=0.2)
+    plt.bar(t2, t2_away_wins,width=0.2)
     plt.title(f"{t1} and {t2} wins away home")
 
 
