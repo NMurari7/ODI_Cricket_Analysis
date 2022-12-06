@@ -102,28 +102,29 @@ def get_venue_details(df,venue):
     return [venue,frows, srows,frows+srows]
 
 
-def plot_ground_bar(Venue_details, venue):
+def plot_bar(venue):
     v = Venue_details[Venue_details["venue"] == venue]
     name = v['venue'].values[0]
     f = v['1st_inng_wins'].values[0]
     s = v['2nd_inng_wins'].values[0]
-    print(f"Total no. of matches played in {venue} is {f + s}")
-
-    figg = plt.figure()
+    print(f"Total no. of matches played in {venue} is {f+s}")
+    
+    plt.figure(figsize=(6,8))
     sns.set_style('darkgrid')
     p = [f,s]
     plt.pie([f,s],  labels = ["First_inning_wins", "Second_inning_wins"], startangle=45, labeldistance=1.05, rotatelabels =True, autopct=lambda p: '{:.0f}'.format(p))
 
-#     plt.bar(['1st_inng_wins'], f, width=0.4)
-#     plt.bar(['2nd_inng_wins'], s, width=0.4)
+#     plt.bar(['1st_inng_wins'], f, width = 0.4)
+#     plt.bar(['2nd_inng_wins'], s, width = 0.4)
+    
     plt.title(venue)
-
-
-    return (figg, f, s)
-
-    # if f > s:
-    #     print("Choose To Bat First")
-    # elif f == s:
-    #     print("1st inng wins = 2nd inng wins")
-    # else:
-    #     print("Choose To Bowl First")
+    plt.show()
+    
+    if f > s:
+        print("Choose To Bat First")
+    elif f == s:
+        print("1st inng wins = 2nd inng wins")
+    else:
+        print("Choose To Bowl First")
+    
+plot_bar("Birmingham")
