@@ -111,11 +111,11 @@ def plot_bar(venue):
     
     plt.figure(figsize=(6,8))
     sns.set_style('darkgrid')
-    p = [f,s]
-    plt.pie([f,s],  labels = ["First_inning_wins", "Second_inning_wins"], startangle=45, labeldistance=1.05, rotatelabels =True, autopct=lambda p: '{:.0f}'.format(p))
+#     p = [f,s]
+#     plt.pie([f,s],  labels = ["First_inning_wins", "Second_inning_wins"], startangle=45, labeldistance=1.05, rotatelabels =True, autopct=lambda p: '{:.0f}'.format(p))
 
-#     plt.bar(['1st_inng_wins'], f, width = 0.4)
-#     plt.bar(['2nd_inng_wins'], s, width = 0.4)
+    plt.bar(['1st_inng_wins'], f, width = 0.4)
+    plt.bar(['2nd_inng_wins'], s, width = 0.4)
     
     plt.title(venue)
     plt.show()
@@ -127,4 +127,4 @@ def plot_bar(venue):
     else:
         print("Choose To Bowl First")
     
-plot_bar("Birmingham")
+# plot_bar("Birmingham")
