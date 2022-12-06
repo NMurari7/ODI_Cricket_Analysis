@@ -16,7 +16,7 @@ This Data visualization project consist of four sections
 
 MOTIVATION
 
-As a cricket fan, i wanted to analyse the ODI matches but i was unable to find any sites which contain all at single place. so i thought of making my own simple webapp on cricket analysis. I started learning Data science and thought it would be a great idea to build a simple project so that it boosts my portfolio.
+As a cricket fan, i wanted to analyse the ODI matches. so i thought of making my own simple webapp on cricket analysis. I started learning Data science and thought it would be a great idea to build a simple project so that it boosts my portfolio.
 
 "I hear and I forget. I see and I remember. I do and I understand" 
                                                           -- Confucius
