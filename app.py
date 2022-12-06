@@ -187,4 +187,6 @@ if menu_bar == 'Ground Analysis':
     fig_team = helper.most_team_wins(df, ground)
 
     st.pyplot(figg)
+    
+    st.markdown(f"Top 3 teams won most matches at {ground}")
     st.pyplot(fig_team)
