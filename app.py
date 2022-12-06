@@ -50,7 +50,7 @@ if menu_bar == 'Overall Analysis':
     y = year.Total_Matches
     fig1 = plt.figure(figsize=(14, 8))
     sns.set_style('darkgrid')
-    plt.bar(x, y)
+    sns.lineplot(x, y)
     plt.xticks(year.Year, rotation='vertical')
     plt.title("Total Matches played each year")
 
