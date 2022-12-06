@@ -184,5 +184,7 @@ if menu_bar == 'Ground Analysis':
     st.subheader(f"Total no. of matches played at {ground} = {f + s}")
     st.markdown(f"First inning wins are {f} ")
     st.markdown(f"Second inning wins are {s}")
+    fig_team = helper.most_team_wins(df, ground)
 
     st.pyplot(figg)
+    st.pyplot(fig_team)
