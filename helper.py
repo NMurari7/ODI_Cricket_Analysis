@@ -73,9 +73,9 @@ def head_to_head(df, t1, t2):
 
     print(f"Total no. of matches played between {t1} and {t2} is {tota}")
 
-    fig8 = plt.figure(figsize=(6, 4))
+    fig8 = plt.figure(figsize=(10, 6))
     p = [t1w,t2w]
-    plt.pie([t1w,t2w],   startangle=90, labeldistance=1.05, rotatelabels =True, autopct=lambda p: '{:.0f}'.format(p))
+    plt.pie([t1w,t2w],   startangle=90, labeldistance=1.05, rotatelabels =True)
     plt.legend(title="Wins", labels = ["Team-1_wins", "Team-2_wins"])
 #     plt.bar(t1, t1w)
 #     plt.bar(t2, t2w)
