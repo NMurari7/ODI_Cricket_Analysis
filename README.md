@@ -18,9 +18,6 @@ MOTIVATION
 
 As a cricket fan, i wanted to analyse the ODI matches. so i thought of making my own simple webapp on cricket analysis. I started learning Data science and thought it would be a great idea to build a simple project so that it boosts my portfolio.
 
-"I hear and I forget. I see and I remember. I do and I understand" 
-                                                          -- Confucius
-
 
 TECHNOLOGIES USED
 
@@ -33,4 +30,4 @@ TECHNOLOGIES USED
 -> Pandas
 
 
-url:-https://nmurari7-odi-cricket-analysis-app-o34exe.streamlit.app/
+
